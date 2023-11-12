@@ -316,28 +316,32 @@ body {
   padding-right: calc(50vw - 580px);
 }
 
-.btn {
+.btn, .btn-solid, .btn-border {
   display: block;
   width: 200px;
   height: 64px;
   transition: 0.3s;
 }
-.btn-solid {
+.btn-solid, .btn-solid-solid, .btn-border-solid {
   background: #E43071;
   color: #F7F7FC;
   border-radius: 40px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
-.btn-solid:hover, .btn-solid:focus {
+.btn-solid:hover, .btn-solid:focus, .btn-solid-solid:hover, .btn-solid-solid:focus, .btn-border-solid:hover, .btn-border-solid:focus {
   background: #BE285E;
 }
-.btn-border {
+.btn-border, .btn-solid-border, .btn-border-border {
   background: #FFF;
   border: 2px solid #E43071;
   color: #E43071;
   border-radius: 40px;
 }
-.btn-border:hover, .btn-border:focus {
+.btn-border:hover, .btn-border:focus, .btn-solid-border:hover, .btn-solid-border:focus, .btn-border-border:hover, .btn-border-border:focus {
   border-color: #BE285E;
   color: #BE285E;
 }
@@ -350,6 +354,19 @@ body {
 }
 .logo span {
   color: #FFC1D8;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .nav {
@@ -399,6 +416,56 @@ body {
   font-size: 16px;
   cursor: pointer;
   margin-left: 30px;
+}
+
+.hero {
+  background-image: url(../img/Hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  display: flex;
+  height: 697px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero__wave {
+  position: absolute;
+  top: 770px;
+  left: 0;
+  width: 100%;
+}
+.hero__title, .hero__logo {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+.hero-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  top: 157px;
+  height: 20px;
+}
+.hero-radio__label::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #FFF;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.hero-radio__input:checked + .hero-radio__label::before {
+  width: 17px;
+  height: 17px;
+  background: #E43071;
 }
 
 /*# sourceMappingURL=style.css.map */
