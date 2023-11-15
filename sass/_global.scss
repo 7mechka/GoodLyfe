@@ -59,4 +59,27 @@ h1, h2, h3, h4, h5, h6 {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    top: 157px;
+    height: 20px;
+    &__label::before {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: #FFF;
+        border-radius: 50%;
+        transition: .3s;
+        cursor: pointer;
+    }
+    &__input:checked + &__label::before {
+        width: 17px;
+        height: 17px;
+        background: #E43071;
+    }
+}

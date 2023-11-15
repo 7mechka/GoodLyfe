@@ -374,6 +374,30 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  top: 157px;
+  height: 20px;
+}
+.radio__label::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #FFF;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.radio__input:checked + .radio__label::before {
+  width: 17px;
+  height: 17px;
+  background: #E43071;
+}
+
 .nav {
   background: #E43071;
   display: flex;
@@ -452,30 +476,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
 
-.radio {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  position: relative;
-  top: 157px;
-  height: 20px;
-}
-.radio__label::before {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 12px;
-  background: #FFF;
-  border-radius: 50%;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.radio__input:checked + .radio__label::before {
-  width: 17px;
-  height: 17px;
-  background: #E43071;
-}
-
 .body {
   display: grid;
   grid-template-columns: 50% auto;
@@ -505,6 +505,35 @@ h1, h2, h3, h4, h5, h6 {
 .body__btn {
   width: 237px;
   height: 68px;
+}
+
+.do-it {
+  background-image: url(../img/Do-it__bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  display: flex;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.do-it__title {
+  color: #FFF;
+  text-shadow: 0px 0px 60px rgba(0, 0, 0, 0.46);
+  font-size: 60px;
+}
+.do-it__desc {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-family: Open Sans;
+  font-size: 17px;
+  line-height: normal;
+}
+.do-it__radio {
+  top: 210px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+.do-it {
+    background-image: url(../img/Do-it__bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0,0,0,0.2);
+    background-blend-mode: overlay;
+    display: flex;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__title {
+        color: #FFF;
+        text-shadow: 0px 0px 60px rgba(0, 0, 0, 0.46);
+        font-size: 60px;
+    }
+    &__desc {
+        color: #FFF;
+        text-align: center;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.50);
+        font-family: Open Sans;
+        font-size: 17px;
+        line-height: normal;
+    }
+    &__radio {
+        top: 210px;
+    }
+}
