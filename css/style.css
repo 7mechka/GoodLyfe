@@ -531,9 +531,42 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Open Sans;
   font-size: 17px;
   line-height: normal;
+  width: 450px;
 }
 .do-it__radio {
   top: 210px;
+}
+
+.facitilies {
+  display: grid;
+  grid-template-columns: 55% auto;
+  height: 435px;
+  margin: 224px 0 108px;
+}
+.facitilies__gym {
+  position: absolute;
+}
+.facitilies__weights {
+  position: absolute;
+  padding: 154px 0 0 150px;
+}
+.facitilies__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.facitilies__title {
+  color: #E43071;
+  font-size: 40px;
+}
+.facitilies__desc {
+  color: #424242;
+  line-height: 37px;
+  width: 500px;
+}
+.facitilies__btn {
+  width: 237px;
+  height: 68px;
 }
 
 /*# sourceMappingURL=style.css.map */

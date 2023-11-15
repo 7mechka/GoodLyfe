@@ -1,0 +1,34 @@
+.facitilies {
+    display: grid;
+    grid-template-columns: 55% auto;
+    height: 435px;
+    margin: 224px 0 108px;
+    &__photo {
+
+    }
+    &__gym {
+        position: absolute;
+    }
+    &__weights {
+        position: absolute;
+        padding: 154px 0 0 150px;
+    }
+    &__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title {
+        color: #E43071;
+        font-size: 40px;
+    }
+    &__desc {
+        color: #424242;
+        line-height: 37px;
+        width: 500px;
+    }
+    &__btn {
+        width: 237px;
+        height: 68px;
+    }
+}
