@@ -1,0 +1,33 @@
+.body {
+    display: grid;
+    grid-template-columns: 50% auto;
+    height: 503px;
+    margin: 95px 0 122px;
+    &__photo {
+
+    }
+    &__male {
+        position: absolute;
+    }
+    &__female {
+        position: absolute;
+        padding: 144px 0 0 199px;
+    }
+    &__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title {
+        color: #E43071;
+        font-size: 40px;
+    }
+    &__desc {
+        color: #424242;
+        line-height: 37px;
+    }
+    &__btn {
+        width: 237px;
+        height: 68px;
+    }
+}

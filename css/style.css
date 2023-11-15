@@ -311,6 +311,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 .center {
   padding-left: calc(50vw - 580px);
   padding-right: calc(50vw - 580px);
@@ -321,6 +325,7 @@ body {
   width: 200px;
   height: 64px;
   transition: 0.3s;
+  cursor: pointer;
 }
 .btn-solid, .btn-solid-solid, .btn-border-solid {
   background: #E43071;
@@ -444,6 +449,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
+  margin-bottom: 25px;
 }
 
 .radio {
@@ -462,11 +468,43 @@ body {
   background: #FFF;
   border-radius: 50%;
   transition: 0.3s;
+  cursor: pointer;
 }
 .radio__input:checked + .radio__label::before {
   width: 17px;
   height: 17px;
   background: #E43071;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 50% auto;
+  height: 503px;
+  margin: 95px 0 122px;
+}
+.body__male {
+  position: absolute;
+}
+.body__female {
+  position: absolute;
+  padding: 144px 0 0 199px;
+}
+.body__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.body__title {
+  color: #E43071;
+  font-size: 40px;
+}
+.body__desc {
+  color: #424242;
+  line-height: 37px;
+}
+.body__btn {
+  width: 237px;
+  height: 68px;
 }
 
 /*# sourceMappingURL=style.css.map */
